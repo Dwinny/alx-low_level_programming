@@ -34,7 +34,7 @@ int _strlen_recursion(char *s)
  * @s: strings to be checked
  * @i: iterators
  * @len: length of a string
- * Return: 1 whenever palindrome,else 0 
+ * Return: 1 whenever palindrome, else 0 
  */
 int check_pal(char *s, int i, int len)
 {
