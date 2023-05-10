@@ -1,13 +1,11 @@
 #include "main.h"
-
 int check_pal(char *s, int i, int len);
 int _strlen_recursion(char *s);
-
 /**
- * is_palindrome - checks whether string is a palindrome
- * @s: strings to be reversed
+ * is_palindrome - checks if strings is a palindrome
+ * @s: string to be reversed
  *
- * Return: 1 whether it is,else 0 if not
+ * Return: 1 whether it is, else 0 it is not
  */
 int is_palindrome(char *s)
 {
@@ -15,12 +13,11 @@ int is_palindrome(char *s)
 		return (1);
 	return (check_pal(s, 0, _strlen_recursion(s)));
 }
-
 /**
- * _strlen_recursion - returns the length the string
- * @s: string that is to calculate the length
+ * _strlen_recursion - returns the length of strings
+ * @s: strings to calculate length of
  *
- * Return: length of a string
+ * Return: length of strings
  */
 int _strlen_recursion(char *s)
 {
@@ -28,13 +25,13 @@ int _strlen_recursion(char *s)
 		return (0);
 	return (1 + _strlen_recursion(s + 1));
 }
-
 /**
- * check_pal - checks for the characters recursively for palindrome
- * @s: strings to be checked
+ * check_pal - checks if the characters is recursively for palindrome
+ * @s: string to be checked
  * @i: iterators
- * @len: length of a string
- * Return: 1 whenever palindrome, else 0 
+ * @len: length of strings
+ *
+ * Return: 1 whether palindrome, else 0
  */
 int check_pal(char *s, int i, int len)
 {
